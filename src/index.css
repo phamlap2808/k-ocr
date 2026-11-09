@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/*
+ * Saigon bottle-green identity, carried over from k-mer's sab-ai-prototype: brand = bottle green,
+ * slate = green-tinted greys, rose = brick (errors), amber = beer amber (the selected box).
+ */
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eef5f1;
+  --color-brand-100: #dcebe3;
+  --color-brand-200: #b9d6c7;
+  --color-brand-300: #8cbba4;
+  --color-brand-400: #5a9a7d;
+  --color-brand-500: #2f7a5c;
+  --color-brand-600: #1a6248;
+  --color-brand-700: #0e4d3a;
+  --color-brand-800: #0b3e2f;
+  --color-brand-900: #093126;
+  --color-brand-950: #05201a;
+
+  --color-slate-50: #f6f8f7;
+  --color-slate-100: #edf1ef;
+  --color-slate-200: #d9dfdb;
+  --color-slate-300: #bec7c2;
+  --color-slate-400: #8f9a94;
+  --color-slate-500: #6b7770;
+  --color-slate-600: #55625b;
+  --color-slate-700: #3f4a44;
+  --color-slate-800: #2b3530;
+  --color-slate-900: #1d2a24;
+  --color-slate-950: #121a16;
+
+  --color-rose-50: #fbf1ef;
+  --color-rose-100: #f6e0dc;
+  --color-rose-200: #edc0b8;
+  --color-rose-300: #e0978a;
+  --color-rose-400: #cf6a5b;
+  --color-rose-500: #bf4b3c;
+  --color-rose-600: #b23a2e;
+  --color-rose-700: #932e25;
+
+  --color-amber-50: #fbf5ea;
+  --color-amber-100: #f5e8cc;
+  --color-amber-200: #ebd199;
+  --color-amber-300: #dfb766;
+  --color-amber-400: #cf9a3d;
+  --color-amber-500: #b7791f;
+  --color-amber-600: #9a6418;
+  --color-amber-700: #7c4f14;
+}
+
+body {
+  background: var(--color-slate-100);
+  color: var(--color-slate-900);
+}
+
+table {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 3px;
+}
